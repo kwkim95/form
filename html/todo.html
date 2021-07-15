@@ -2,17 +2,19 @@
 <head>
   <title>todo</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/todo.css">
 </head>
-<body>                                              
-<h3>일정관리 페이지</h3>
-<form>
-  <label name = "title">제목</label>
-  <input type="text" name = "title" id = "title"> <br /> <br />
-  <label name = "contents">내용</label>
-  <textarea id="story" name="story"rows="5" cols="22"></textarea> <br /> <br />
-  <label name = "date">일정</label>
-  <input type="datetime-local" name="date" id="date"> <br /> <br />
-  <button type = "button" id = "enroll" onclick="location.href='index.html'">일정등록</button>
-</form>
+<body>     
+  <div id="main">                                         
+    <h1 id="title">일정관리 페이지</h3>
+    <form>
+      <input type="text" name = "_title" id = "_title" placeholder="제목"> <br /> <br />
+      <textarea id="contents" name="contents" placeholder="내용"></textarea> <br /> <br />
+      <label name = "date">일정</label>
+      <input type="datetime-local" name="date" id="date"> <br /> <br />
+      <button type = "button" id = "enroll" onclick="location.href='index.html'">일정등록</button> <br />
+      <button type = "button" id = "cancel" onclick="location.href='index.html'">등록취소</button>
+    </form>
+  </div>
 </body>
 </html>

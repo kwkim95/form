@@ -1,0 +1,36 @@
+* {
+  background-color: whitesmoke;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font-weight: 900;
+  color: forestgreen;
+  margin: 50px;
+}
+
+input#_title,
+textarea#contents,
+button#enroll,
+button#cancel {
+  margin: 5px;
+  width: 250px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+textarea#contents {
+  height: 100px;
+}
+button#enroll,
+button#cancel {
+  width: 255px;
+  background-color: forestgreen;
+  color: white;
+}

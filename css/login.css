@@ -1,0 +1,33 @@
+* {
+  background-color: whitesmoke;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font-weight: 900;
+  color: forestgreen;
+  margin: 50px;
+}
+
+input#id,
+input#pwd,
+button#login,
+button#make {
+  margin: 5px;
+  width: 250px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+button#login,
+button#make {
+  width: 255px;
+  background-color: forestgreen;
+  color: white;
+}
