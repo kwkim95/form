@@ -20,6 +20,7 @@ a {
 }
 
 button#login,
+button#logout,
 button#todo {
   margin: 5px;
   width: 250px;

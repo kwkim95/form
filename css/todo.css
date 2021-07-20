@@ -14,10 +14,10 @@
   margin: 50px;
 }
 
-input#_title,
-textarea#contents,
+button#cancel,
 button#enroll,
-button#cancel {
+input#_title,
+textarea#contents {
   margin: 5px;
   width: 250px;
   height: 30px;
@@ -28,8 +28,8 @@ button#cancel {
 textarea#contents {
   height: 100px;
 }
-button#enroll,
-button#cancel {
+button#cancel,
+button#enroll {
   width: 255px;
   background-color: forestgreen;
   color: white;

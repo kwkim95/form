@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <head>
-  <title>entry</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../css/entry.css">
+    <title>entry</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/entry.css">
+    <script type="text/javascript" src="../js/entry.js"></script>
 </head>
-<body>        
-<div id="main">                                  
-<h1 id="title">회원가입 페이지</h1>
-  <form>
-    <input type="text" name = "id" id = "id" placeholder="아이디"> <br />
-    <input type="email" name = "email" id = "email" placeholder="이메일"> <br />
-    <input type="password" name = "pwd" id = "pwd" placeholder="비밀번호"> <br />
-    <input type="password" name = "re_pwd" id = "re_pwd" placeholder="비번확인"> <br /> <br />
-    
-    <div id="choose">
-      <label name="email_agree">메일 수신</label>
-      <input type="radio" name = "email_agree" value="agree">동의
-      <input type="radio" name = "email_agree" value="disagree">동의하지않음 <br />
-      
-      <label name="interest">관심 분야</label>
-      <input type="checkbox" name="interest" value="ai">AI
-      <input type="checkbox" name="interest" value="iot">IOT
-      <input type="checkbox" name="interest" value="bigdata">BigData
-      <input type="checkbox" name="interest" value="cloud">Cloud <br />
+<body>
+    <div id="main">
+        <h1 id="title">회원가입 페이지</h1>
+        <form>
+            <input type="text" name="id" id="id" placeholder="아이디">
+            <br/>
+            <input type="email" name="email" id="email" placeholder="이메일">
+            <br/>
+            <input type="password" name="pwd" id="pwd" placeholder="비밀번호">
+            <br/>
+            <input type="password" name="re_pwd" id="re_pwd" placeholder="비번확인">
+            <br/>
+            <br/>
 
-      <label name="roll">역할</label>
-      <select name = "roll">
-        <option value = "backend">Back-End Developer</option>
-        <option value = "backend">Front-End Developer</option>
-        <option value = "backend">Full-Stack Developer</option>
-        <option value = "backend">Analysis</option>
-        <option value = "backend">Architect</option>
-      </select>
+            <div id="choose">
+                <label name="email_agree">메일 수신</label>
+                <input type="radio" name="email_agree" value="agree">동의
+                <input type="radio" name="email_agree" value="disagree">동의하지않음
+                <br/>
+
+                <label name="interest">관심 분야</label>
+                <input type="checkbox" name="interest" value="ai">AI
+                <input type="checkbox" name="interest" value="iot">IOT
+                <input type="checkbox" name="interest" value="bigdata">BigData
+                <input type="checkbox" name="interest" value="cloud">Cloud
+                <br/>
+
+                <label name="roll">역할</label>
+                <select name="roll">
+                    <option value="backend">Back-End Developer</option>
+                    <option value="backend">Front-End Developer</option>
+                    <option value="backend">Full-Stack Developer</option>
+                    <option value="backend">Analysis</option>
+                    <option value="backend">Architect</option>
+                </select>
+            </div>
+            <br/>
+            <br/>
+            <button type="button" id="entry" onclick="pwd_check()">가입</button>
+            <br/>
+            <button type="reset" id="reset">초기화</button>
+        </form>
     </div>
-    <br /> <br />
-    <button type = "button" id = "entry" onclick="location.href='login.html'">가입</button> <br />
-    <button type="reset" id="reset">초기화</button>
-  </form>
-</div>    
 </body>
 </html>

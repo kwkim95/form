@@ -14,10 +14,10 @@
   margin: 50px;
 }
 
-input#id,
-input#pwd,
 button#login,
-button#make {
+button#make,
+input#id,
+input#pwd {
   margin: 5px;
   width: 250px;
   height: 30px;
